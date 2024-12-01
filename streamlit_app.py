@@ -1,5 +1,6 @@
 import pyshorteners
 import streamlit as st
+from PIL import Image
 
 def shorten_url(url):
     s = pyshorteners.Shortener()
@@ -8,7 +9,12 @@ def shorten_url(url):
 
 # Creamos app web con Streamlit
 st.set_page_config(page_title="Acortador de URL", page_icon="✏️", layout="centered")
-st.image("images/cabecera.png", use_column_width=True)
+#st.image("images/cabecera.png", use_column_width=True)
+#st.image("images/cabecera.png", use_container_width=True)
+image = Image.open("images/cabecera.png")
+st.image(image, caption="Cabecera", width=700)  # Ajusta el ancho según lo necesites
+
+
 st.title("Acortador de URL")
 
 # Texto explicativo con color verde para "Acortador de URL"
