@@ -12,7 +12,7 @@ st.set_page_config(page_title="Acortador de URL", page_icon="✏️", layout="ce
 #st.image("images/cabecera.png", use_column_width=True)
 #st.image("images/cabecera.png", use_container_width=True)
 image = Image.open("images/cabecera.png")
-st.image(image, caption="Cabecera", width=700)  # Ajusta el ancho según lo necesites
+st.image(image, width=400)  # Ajusta el ancho según lo necesites
 
 
 st.title("Acortador de URL")
